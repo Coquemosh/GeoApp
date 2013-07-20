@@ -10,12 +10,11 @@ $(document).ready(function(){
             alert('code: '    + error.code    + '\n' +
                   'message: ' + error.message + '\n');
         }
-
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
-    },false);
+navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    }, false);
 });
 
-function initialize(lat, lon) {
+function initialize(lat,lon){
     //Posición del mapa
     var latlng = new google.maps.LatLng(lat, lon);
     var myOptions = {
